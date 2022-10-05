@@ -1,12 +1,11 @@
 import React from 'react';
 
-const Card = ({ data }) => {
-    const { slug, brand, image, phone_name } = data;
+const Card = ({data}) => {
 
 
+    const {  brand, image, phone_name,price, } = data;
 
-    const part = slug.split('-');
-    const price = part[1];
+
 
     return (
         <div className='border border-solid bg-white rounded-md flex flex-col justify-center text-center p-5'>
